@@ -18,11 +18,10 @@ from smoke_test import verify_manifest  # noqa: E402
 
 
 def write_json(path: Path, value: object) -> None:
-    path.write_text(
-        json.dumps(value, indent=2, sort_keys=True) + "\n",
-        encoding="utf-8",
-        newline="\n",
-    )
+    # pathlib.Path.write_text added the newline argument in Python 3.10.
+    # Keep the public acceptance matrix honest on the declared 3.9 runner.
+    with path.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(json.dumps(value, indent=2, sort_keys=True) + "\n")
 
 
 def sha256(path: Path) -> str:
