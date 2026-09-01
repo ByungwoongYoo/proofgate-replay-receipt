@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this synthetic demonstration, please cite it as software."
+title: "ProofGate Synthetic Replay Kit"
+type: software
+version: 1.0.0
+date-released: 2026-09-01
+authors:
+  - family-names: Yoo
+    given-names: Byungwoong
+    orcid: "https://orcid.org/0009-0002-1797-3100"
+license: MIT
+abstract: >-
+  A dependency-free, two-target synthetic demonstration of local replay
+  receipts, digest checks, declared change scope, and fail-closed validation.

@@ -1,0 +1,57 @@
+{
+  "claim": {
+    "passed_count": 2,
+    "passed_target_ids": [
+      "target-alpha",
+      "target-beta"
+    ],
+    "target_ids": [
+      "target-alpha",
+      "target-beta"
+    ]
+  },
+  "evidence_mode": "same-operator-local",
+  "issued_at": "2026-09-01T00:00:00Z",
+  "limitations": [
+    "synthetic-demo-only",
+    "same-operator-local-evidence",
+    "not-third-party-verification",
+    "not-certification",
+    "not-production-assurance"
+  ],
+  "operator": "local-demo-operator",
+  "profile": "proofgate-synthetic-replay/v1",
+  "receipt_id": "synthetic-demo-valid-001",
+  "targets": [
+    {
+      "id": "target-alpha",
+      "input": {
+        "path": "evidence/target-alpha-input.json",
+        "sha256": "24b8cee2a2ebe462c1849917b55ab33497ca98ddadb426c2182cce9ea8b4dd35"
+      },
+      "planned_changes": [
+        "slot-alpha"
+      ],
+      "report": {
+        "path": "evidence/target-alpha-report.json",
+        "sha256": "564f01b6c414db2a612c22d8e829fcea4ffefebc15140e53ce91be2bc5006f9a"
+      },
+      "status": "pass"
+    },
+    {
+      "id": "target-beta",
+      "input": {
+        "path": "evidence/target-beta-input.json",
+        "sha256": "37f88554f0a00096021defea1f6a3ca4dabbc280aed6613ea6d326466a035523"
+      },
+      "planned_changes": [
+        "slot-beta"
+      ],
+      "report": {
+        "path": "evidence/target-beta-report.json",
+        "sha256": "b181d8db45dbc99f306806d6bacbcc9cd0d95503978e4efbd5d5313877f8914f"
+      },
+      "status": "pass"
+    }
+  ]
+}

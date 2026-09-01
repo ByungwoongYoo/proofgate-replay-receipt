@@ -1,0 +1,9 @@
+{
+  "operation": "sum-integers",
+  "target_id": "target-alpha",
+  "values": [
+    3,
+    5,
+    8
+  ]
+}

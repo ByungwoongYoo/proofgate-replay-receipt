@@ -1,0 +1,15 @@
+{
+  "completed": true,
+  "exit_code": 0,
+  "new_assumptions": 0,
+  "observed_changes": [
+    "slot-beta"
+  ],
+  "output": {
+    "kind": "text",
+    "value": "etag foorp"
+  },
+  "runner": "synthetic-local-runner-v1",
+  "target_id": "target-beta",
+  "unfinished_steps": 0
+}
