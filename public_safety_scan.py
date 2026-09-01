@@ -11,7 +11,7 @@ from typing import Any, Dict, List, Optional
 
 
 ROOT = Path(__file__).resolve().parent
-TEXT_SUFFIXES = {".cff", ".json", ".md", ".py", ".txt"}
+TEXT_SUFFIXES = {".cff", ".html", ".json", ".md", ".py", ".txt"}
 TEXT_NAMES = {"LICENSE", "SHA256SUMS"}
 
 # The fragments keep excluded names out of the scanner's own source text.
