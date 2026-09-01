@@ -1,0 +1,51 @@
+name: Public artifact pilot fit check
+description: Request a fixed-scope receipt for one public Lean 4 or Rocq artifact.
+title: "[Pilot fit] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This form is only for public repositories. The fixed offer is USD 150 with delivery within 24 hours after scope and payment are agreed. Do not include secrets, private code, credentials, or customer data.
+  - type: input
+    id: repository
+    attributes:
+      label: Public repository URL
+      description: Link to the public Lean 4 or Rocq repository.
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+  - type: input
+    id: commit
+    attributes:
+      label: Pinned commit or release tag
+      description: Provide the exact public revision that should be checked.
+    validations:
+      required: true
+  - type: input
+    id: toolchain
+    attributes:
+      label: Toolchain and build command
+      description: Name the pinned toolchain file and the documented clean-build command.
+    validations:
+      required: true
+  - type: input
+    id: target
+    attributes:
+      label: One named target or release claim
+      description: State exactly which theorem, target, or release claim the receipt should cover.
+    validations:
+      required: true
+  - type: textarea
+    id: delta
+    attributes:
+      label: Expected change or decision
+      description: In a few sentences, explain what changed and what decision the receipt should support.
+    validations:
+      required: true
+  - type: checkboxes
+    id: public-only
+    attributes:
+      label: Public-information confirmation
+      options:
+        - label: I confirm that every link and detail in this issue is public and contains no secret, credential, private code, or customer data.
+          required: true

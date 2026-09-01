@@ -25,6 +25,8 @@
     h2 { font-size:1.45rem; margin:0 0 .65rem; }
     pre { overflow:auto; padding:1rem; color:#f7f8fc; background:#151b29; border-radius:.7rem; }
     .boundary { padding-top:1.25rem; border-top:1px solid var(--line); color:var(--muted); font-size:.94rem; }
+    .offer { padding:1.5rem; border:1px solid #b9c8ef; border-radius:.8rem; background:#f3f6ff; }
+    .offer strong { color:var(--brand); }
     footer { margin-top:3rem; color:var(--muted); font-size:.9rem; }
     @media (max-width:700px) { main{padding-top:48px}.grid{grid-template-columns:1fr} }
   </style>
@@ -37,6 +39,7 @@
     <div class="actions">
       <a class="button primary" href="https://github.com/ByungwoongYoo/proofgate-replay-receipt">Inspect the repository</a>
       <a class="button secondary" href="https://github.com/ByungwoongYoo/proofgate-replay-receipt/blob/main/CLAIMS_AND_LIMITS.md">Read the exact claims</a>
+      <a class="button secondary" href="https://github.com/ByungwoongYoo/proofgate-replay-receipt/issues/new?template=public-pilot.yml">Request a public fit check</a>
     </div>
 
     <div class="grid">
@@ -53,10 +56,21 @@ python -m unittest discover -s tests -v
 python public_safety_scan.py</code></pre>
     </section>
 
+    <section class="offer">
+      <h2>One public formal-artifact receipt</h2>
+      <p><strong>USD 150 fixed · within 24 hours after scope and payment are agreed.</strong></p>
+      <p>For one public Lean 4 or Rocq repository, one pinned commit and toolchain,
+      and one named proof target or release claim: clean rebuild, exact target or
+      change delta, unfinished-proof and new-assumption scan, one deliberately
+      broken control, and a compact PASS, PARTIAL, or BLOCKED receipt with hashes
+      and rerun commands.</p>
+      <p><a href="https://github.com/ByungwoongYoo/proofgate-replay-receipt/blob/main/PILOT.md">Read the fit gate and boundaries</a>.</p>
+    </section>
+
     <section class="boundary">
       This public example uses invented fixtures. It demonstrates the receipt method and does not verify any real system.
     </section>
-    <footer>Built by Byungwoong Yoo · Independent researcher and developer in Seoul</footer>
+    <footer>Built by <a href="https://orcid.org/0009-0002-1797-3100">Byungwoong Yoo</a> · Independent researcher and developer in Seoul</footer>
   </main>
 </body>
 </html>

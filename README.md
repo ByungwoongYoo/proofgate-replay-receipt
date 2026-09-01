@@ -32,6 +32,27 @@ python receipt_validator.py fixtures/valid-receipt.json
 No package installation, network connection, account, or external service is
 needed. All paths stored in the examples are relative to the receipt.
 
+Every push and pull request also runs the same smoke, unit, tamper, manifest,
+and public-safety checks in GitHub Actions. The workflow is a trust signal for
+this invented demonstration; it is not the paid product and it does not replace
+an independent review.
+
+## Fixed-price public pilot
+
+For a real public Lean 4 or Rocq artifact, ProofGate offers a deliberately small
+human-reviewed handoff: one pinned repository and toolchain, one named target or
+release claim, a clean rebuild, target/change delta, unfinished-proof and new-
+assumption scan, one deliberately broken control, and a compact receipt with
+hashes and exact rerun commands.
+
+- USD 150 fixed
+- delivery within 24 hours after scope and payment are agreed
+- public repository only; no credentials, customer data, or private proof body
+- PASS, PARTIAL, or BLOCKED outcome; no certification claim
+
+Read the exact [pilot scope and fit gate](PILOT.md), or
+[request a public fit check](https://github.com/ByungwoongYoo/proofgate-replay-receipt/issues/new?template=public-pilot.yml).
+
 ## What a pass means
 
 A pass means that this local validator found the expected files, matched their
@@ -50,6 +71,8 @@ for the exact boundary.
 - `fixtures/`: one valid receipt, two expected failures, and invented evidence
 - `schemas/`: machine-readable receipt shape
 - `tests/`: unit and tamper tests
+- `.github/workflows/ci.yml`: public smoke, unit, tamper, manifest, and safety gate
+- `.github/ISSUE_TEMPLATE/public-pilot.yml`: public-only paid-pilot fit intake
 - `SHA256SUMS`: digest manifest for every authored file except the manifest itself
 
 This public repository contains only invented fixtures. It exposes no real
